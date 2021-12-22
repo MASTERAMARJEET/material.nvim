@@ -363,9 +363,9 @@ theme.loadLSP = function ()
 		LspDiagnosticsFloatingHint =            { fg = material.purple  }, -- used for "Hint" diagnostic messages in the diagnostics float
 		LspDiagnosticsVirtualTextHint =         { fg = material.purple  }, -- Virtual text "Hint"
 		LspDiagnosticsUnderlineHint =           { style = 'undercurl', sp = material.paleblue }, -- used to underline "Hint" diagnostics.
-		LspReferenceText =                      { fg = material.white, style = 'underline' }, -- used for highlighting "text" references
-		LspReferenceRead =                      { fg = material.white, style = 'underline' }, -- used for highlighting "read" references
-		LspReferenceWrite =                     { fg = material.white, style = 'underline' }, -- used for highlighting "write" references
+		LspReferenceText =                      { fg = material.white, bg = material.selection }, -- used for highlighting "text" references
+		LspReferenceRead =                      { fg = material.white, bg = material.selection }, -- used for highlighting "read" references
+		LspReferenceWrite =                     { fg = material.white, bg = material.selection }, -- used for highlighting "write" references
 
 		-- Nvim 0.6.
 		DiagnosticVirtualTextError = { fg = material.error },
